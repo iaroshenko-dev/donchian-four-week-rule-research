@@ -78,19 +78,19 @@ python -m unittest discover -s tests -v
 ### Файлы
 
 ```text
-README.md                                Обзор, вопрос, результаты, инструкция
-quant_research_6_donchian.py           Исходный код frozen v0.1, неизменённый
-run_research.py                        Portable copy для повторного запуска
-requirements.txt                       Версии библиотек
-scripts/fetch_data.py                  Загрузка и SHA256-проверка dataset wheel
-scripts/verify_reproduction.py         Проверка 8 итоговых CSV против оригинала
-tests/test_archived_consistency.py     Offline тесты сохранённых результатов
-docs/Quant_Research_6_Donchian_Protocol_v0_1.md  Протокол до исходов
-docs/Quant_Research_6_Donchian_Final_2026-10-14.md  Итоговый отчёт
-docs/METHODOLOGY_AND_LIMITATIONS_RU.md Честный разбор ошибок и ограничений
-results/                                Результаты исторического frozen run
-figures/                                Графики результатов
-data/README.md                          Источник данных, лицензия, checksum
+README.md                                            Обзор, вопрос, результаты, инструкция
+quant_research_6_donchian.py                         Исходный код frozen v0.1, неизменённый
+run_research.py                                      Portable copy для повторного запуска
+requirements.txt                                     Версии библиотек
+scripts/fetch_data.py                                Загрузка и SHA256-проверка dataset wheel
+scripts/verify_reproduction.py                       Проверка 8 итоговых CSV против оригинала
+tests/test_archived_consistency.py                   Offline тесты сохранённых результатов
+docs/Quant_Research_6_Donchian_Protocol_v0_1.md      Протокол до исходов
+docs/Quant_Research_6_Donchian_Final_2026-10-14.md   Итоговый отчёт
+docs/METHODOLOGY_AND_LIMITATIONS_RU.md               Честный разбор ошибок и ограничений
+results/                                             Результаты исторического frozen run
+figures/                                             Графики результатов
+data/README.md                                       Источник данных, лицензия, checksum
 ```
 
 **Исследовательский вывод:** мы не доказали, что «правило Дончиана больше не работает». Мы установили, что **наша заранее фиксированная модель краткосрочного пробоя по закрытиям на 84 фьючерсах не показала сильного современного чистого преимущества** после модельных издержек и по сравнению с сопоставимыми альтернативами. Ветку v0.1 закрыли, а отрицательный результат сохранили для независимого аудита.
