@@ -1,0 +1,9 @@
+data/*.whl
+!data/README.md
+generated/*
+!generated/.gitkeep
+__pycache__/
+*.py[cod]
+.venv/
+.ipynb_checkpoints/
+.DS_Store
