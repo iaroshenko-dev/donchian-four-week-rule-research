@@ -1,0 +1,19 @@
+Quant Research #6 — Donchian Four-Week Rule
+============================================
+VERDICT: FAIL_PRIMARY_GATE
+
+PRIMARY broad 84-market close-confirmed 20D channel:
+1985-2009 net1x: ann=8.9357%, vol=11.0104%, Sharpe=0.812, CAGR=8.6835%, MaxDD=-19.17%
+2010-2026 net1x: ann=0.0923%, vol=11.6452%, Sharpe=0.008, CAGR=-0.5823%, MaxDD=-36.86%
+2020-2026 net1x: ann=2.6951%, vol=12.3298%, Sharpe=0.219, CAGR=1.9594%, MaxDD=-27.56%
+2010+ bootstrap 95% annual arithmetic mean: [-4.3167%, 4.7839%], P<=0=0.5086
+2010+ 2x-cost ann=-3.4704%, Sharpe=-0.298
+2010+ AlwaysLong same-risk: ann=9.4437%, vol=13.8365%, Sharpe=0.683, CAGR=8.8504%, MaxDD=-34.58%
+Best-year concentration share: nan (best year 2020)
+
+LITERAL 4-completed-calendar-week close robustness:
+2010+ net1x ann=0.5795%, vol=11.7197%, Sharpe=0.049
+2020+ net1x ann=3.7228%, Sharpe=0.301
+
+Gate booleans: [np.True_, np.False_, np.False_, np.False_, True, np.False_, np.True_]
+Note: broad test uses daily close-confirmed channels because 84-market resource does not contain daily highs/lows. OHLC diagnostic for ES/GC/TY is reported separately.
